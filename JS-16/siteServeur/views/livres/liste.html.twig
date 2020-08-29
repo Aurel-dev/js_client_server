@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block titre %} Page listant les livres {% endblock %}
+{% block contenu %}
+<table class="table text-center monTableau" id="tableauLivres">
+    <thead>
+        <tr class="table-dark" id="titresColonne">
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Nombre de pages</th>
+            <th colspan = "2">Actions</th>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/livres/L'algorithme selon H2PROG">L'algorithme selon H2PROG</a></td>
+            <td>Mathieu GASTON</td>
+            <td>200</td>
+            <td><a href="" class="btn btn-warning">Modifier</a></td>
+            <td><a href="" class="btn btn-danger">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td><a href="/livres/Le monde marin">Le monde marin</a></td>
+            <td>Gabrielle SCHWARTZ</td>
+            <td>300</td>
+            <td><a href="" class="btn btn-warning">Modifier</a></td>
+            <td><a href="" class="btn btn-danger">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td><a href="/livres/La France au 19eme">La France du 19eme</a></td>
+            <td>Tyo MILO</td>
+            <td>250</td>
+            <td><a href="" class="btn btn-warning">Modifier</a></td>
+            <td><a href="" class="btn btn-danger">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td><a href="livres/Etranger">Etranger</a></td>
+            <td>Albert CAMUS</td>
+            <td>100</td>
+            <td><a href="" class="btn btn-warning">Modifier</a></td>
+            <td><a href="" class="btn btn-danger">Supprimer</a></td>
+        </tr>
+    </tbody>
+</table>
+<a href="" class="btn btn-success d-block">Ajouter</a>
+{% endblock %}
